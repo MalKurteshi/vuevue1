@@ -14,7 +14,7 @@
       <b-nav-item href="#"> <router-link to="/about">About</router-link></b-nav-item>
       <b-nav-item href="#"> <router-link to="/policies">Policies</router-link></b-nav-item>
       <b-nav-item href="#"> <router-link to="/register">Register</router-link></b-nav-item>
-     
+
     </b-navbar-nav>
 
     <!-- Right aligned nav items -->
