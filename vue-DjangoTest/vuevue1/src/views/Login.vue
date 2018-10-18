@@ -1,9 +1,56 @@
 <template>
-    <div id="login">
-        <h1>Login</h1>
-        <input type="text" name="username" v-model="input.username" placeholder="Username" />
-        <input type="password" name="password" v-model="input.password" placeholder="Password" />
-        <button type="button" v-on:click="login()">Login</button>
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <div class="login100-pic js-tilt" data-tilt>
+                    <img src="./assets/img-01.png" alt="IMG">
+                </div>
+
+                <form class="login100-form validate-form">
+					<span class="login100-form-title">
+						Member Login
+					</span>
+
+                    <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                        <input class="input100" type="text" name="username" v-model="input.username" placeholder="Username" />
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate = "Password is required">
+                        <input class="input100" type="password" name="password" v-model="input.password" placeholder="Password" />
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+                    </div>
+
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" v-on:click="login()">
+                            Login
+                        </button>
+                    </div>
+
+                    <div class="text-center p-t-12">
+						<span class="txt1">
+							Forgot
+						</span>
+                        <a class="txt2" href="#">
+                            Username / Password?
+                        </a>
+                    </div>
+
+                    <div class="text-center p-t-136">
+                        <a href="#" class="txt2" > <router-link to="/register">
+                            Create your Account</router-link>
+                            <!--<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>-->
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -36,12 +83,5 @@
 </script>
 
 <style scoped>
-    #login {
-        width: 500px;
-        border: 1px solid #CCCCCC;
-        background-color: #FFFFFF;
-        margin: auto;
-        margin-top: 200px;
-        padding: 20px;
-    }
+    @import "./assets/main.css";
 </style>

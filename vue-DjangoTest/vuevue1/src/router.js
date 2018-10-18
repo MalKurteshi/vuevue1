@@ -1,8 +1,7 @@
+
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-//import login from "./views/login.vue"
-// import SecureComponent from "./views/secure.vue"
 
 Vue.use(Router)
 
@@ -12,7 +11,7 @@ export default new Router({
                 path: '/',
                 name: Home,
                 redirect: {
-                    name: "login"
+                    name: "login"//arsyeja pse nHome n nav bar na kthen ne login
                 }
             },
             {

@@ -42,10 +42,6 @@
       </b-collapse>
     </b-navbar>
 
-    <!--<div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>-->
     <router-view  @authenticated="setAuthenticated"/><!--E SHTUME-->
 
   </div>
@@ -77,5 +73,9 @@ export default {
     }
 }
 </script>
+
+<style>
+  @import "views/assets/bootstrap.min.css";
+</style>
 
 
