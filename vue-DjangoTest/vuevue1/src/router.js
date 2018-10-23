@@ -28,25 +28,25 @@ export default new Router({
 },
 {
     path: '/register',
-        name: 'register',
+    name: 'register',
 
     component: () => import('./views/Register.vue')
 },
 {
-    path: '/riskDetails',
-        name: 'riskDetails',
+    path: '/riskDetails/:insType', //E NDRYSHUME!!!!
+    name: 'riskDetails',
 
     component: () => import('./views/RiskDetails.vue')
 },
 {
     path: "/login",
-        name: "login",
+    name: "login",
     // component: LoginComponent
     component: () => import('./views/Login.vue')
 },
 {
     path: "/secure",
-        name: "secure",
+    name: "secure",
     // component: SecureComponent
     component: () => import('./views/Secure.vue')
 }
