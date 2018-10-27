@@ -1,4 +1,3 @@
-
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
@@ -49,7 +48,14 @@ export default new Router({
     name: "secure",
     // component: SecureComponent
     component: () => import('./views/Secure.vue')
-}
+},
+            {
+                path: "/ShowPolicies",
+                name: "/ShowPolicies",
+
+                component: () => import('./views/ShowPolicies.vue')
+            }
+
 
 
 

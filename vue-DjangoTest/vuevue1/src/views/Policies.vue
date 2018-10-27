@@ -1,11 +1,7 @@
 <template>
-
     <div class="limiter">
         <div class="container-login100">
-
             <div class="wrap-login100">
-
-
                 <div class="container-login100-form-btn">
                     <button  v-on:click="gotoRiskDetails1" value="Car Insurance" class="login100-form-btn">
                         Car Insurance
